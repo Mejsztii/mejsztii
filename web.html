@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PartyClean - Bulik és Események Utáni Takarítás</title>
+    
+    <link href="script.js" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">PartyClean</div>
+        <nav>
+            <a href="#home">Kezdőlap</a>
+            <a href="#services">Szolgáltatások</a>
+            <a href="#about">Rólunk</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>A bulinak vége.<br><span>A rendet mi hozzuk.</span></h1>
+        <p>Házibulik, céges rendezvények vagy fesztiválok utáni totális káosz? Ne aggódj a másnap miatt, mi eltüntetjük a nyomokat, mintha mi sem történt volna.</p>
+        <a href="#services" class="btn-cta">Nézd meg mit vállalunk</a>
+    </section>
+
+    <section id="services" class="services">
+        <h2 class="section-title">Miben vagyunk <span>profik?</span></h2>
+        <div class="grid">
+            <div class="card" onclick="showDetails('SOS')">
+                <icon>🎉</icon>
+                <h3>Másnapos SOS</h3>
+                <p>Gyors és alapos takarítás lakásokban, házakban a legnagyobb ereszd-el-a-hajam után is. Sörösüvegek, konfetti? Elintézzük.</p>
+            </div>
+            <div class="card" onclick="showDetails('corporate')">
+                <icon>🏢</icon>
+                <h3>Céges Események</h3>
+                <p>Konferenciák, gálák vagy céges csapatépítők utáni nagytakarítás és az eredeti állapot visszaállítása cégeknek is.</p>
+            </div>
+            <div class="card" onclick="showDetails('extreme')">
+                <icon>✨</icon>
+                <h3>Extrém Kárpitisztítás</h3>
+                <p>Kiömlött vörösbor, ragadós foltok a szőnyegen vagy a kanapén? Speciális gépeinkkel és vegyszereinkkel kiszedjük.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2 class="section-title">Kik vagyunk <span>mi?</span></h2>
+            <p>A PartyClean csapata azért jött létre, hogy neked csak a szórakozásra kelljen koncentrálnod. Fiatalos, lendületes és megbízható brigád vagyunk, akik nem ijednek meg a legdurvább parti-káosztól sem. Diszkréten, gyorsan és professzionális eszközökkel dolgozunk, hogy te nyugodtan kipihenhesd a fáradalmakat.</p>
+            <a href="mailto:info@partyclean.hu" class="btn-cta">Írj nekünk közvetlenül</a>
+        </div>
+    </section>
+
+    <div class="fab-wrapper" id="fabWrapper">
+        <button class="fab-main" id="fabMain">⚡</button>
+        <div class="fab-menu">
+            <a href="tel:+36301234567" class="fab-item" data-tooltip="Hívás most">📞</a>
+            <a href="mailto:info@partyclean.hu" class="fab-item" data-tooltip="E-mail küldés">✉️</a>
+            <a href="#services" class="fab-item" data-tooltip="Árak / Szolgáltatások">📋</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 PartyClean Szolgálat. Minden jog fenntartva.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
